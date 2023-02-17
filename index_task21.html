@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 21</title>
+</head>
+<body>
+    <div class="buttons">
+        <button class="btnPrev d-none">Prev</button>
+        <button class="btnNext">Next</button>
+    </div>
+    <div class="container">
+        <ul class="slider">
+            <li class="slider-item active">
+                <img src="1.jpg" alt="">
+            </li>
+            <li class="slider-item">
+                <img src="2.jpg" alt="">
+            </li>
+            <li class="slider-item">
+                <img src="3.jpg" alt="">
+            </li>
+            <li class="slider-item">
+                <img src="4.jpg" alt="">
+            </li>
+        </ul>
+    </div>
+    <style>
+        .container{
+            width:500px;
+        }
+         img{
+            width: 450px;
+         }
+        .slider-item {
+            display: none;
+        }
+        .slider-item.active{
+            display: block;
+        }
+        .d-none{
+            display: none;
+        }
+        button{
+            display: inline-block;
+            box-sizing: border-box;
+	        padding: 0 24px;
+            margin: 0 15px 15px 0;
+            outline: none;
+            border: none;    
+            border-radius: 3px;
+            height: 37px;
+            line-height: 37px;
+            font-size: 14px;
+            text-transform: uppercase;
+            font-weight: normal;
+            text-decoration: none;	
+        }
+        .buttons{
+            display: flex;
+            margin: 0px;
+            padding-bottom: 20px;
+            max-width: 250px;
+        }
+        .btnNext{
+            margin-left: 95px;
+            position: inherit;
+        }
+        .btnPrev{
+            position: absolute;
+        }
+    </style>
+    <script src="main_task21.js"></script>
+</body>
+</html>
